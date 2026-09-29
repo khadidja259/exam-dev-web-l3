@@ -1,0 +1,12 @@
+@extends('layout')
+
+@section('contenu')
+    <form action="/inscription" method="post">
+        {{ csrf_field() }}
+
+        <input type="title" name="titre" placeholder="Titre">
+        <input type="date" name="date" placeholder="Date">
+        <input type="place" name="lieux" placeholder="Lieux">
+        <input type="submit" value="inscrire l'evenement">
+    </form>
+@endsection
